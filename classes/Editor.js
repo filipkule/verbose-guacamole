@@ -16,6 +16,11 @@ _toggleFullScreen = EasyMDE.toggleFullScreen;
 
 // Fullscreen
 toggleFullScreen = (e) => {
+  if(document.getElementById('modals').style.display === 'none'){
+    document.getElementById('modals').style.display = 'block'
+  } else {
+    document.getElementById('modals').style.display = 'none'
+  }
   document.body.classList.toggle('focusMode');
   function escapeFunction(event) {
     if (event.key === 'Escape') {

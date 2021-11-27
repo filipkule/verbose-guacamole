@@ -144,6 +144,7 @@ body.focusMode > #novelStats {
 }
 
 #fileTree__list {
+  height: 100%;
   max-height: calc(100vh - 42px - 1.5em);
   overflow: auto;
   padding-bottom: 2em;
